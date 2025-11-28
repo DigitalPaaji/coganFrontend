@@ -1,0 +1,81 @@
+"use client";
+import React from "react";
+import { motion } from "framer-motion";
+
+export default function About() {
+  return (
+    <div className="m-2 lg:m-4">
+      {/* Fixed Height + Rounded Wrapper (same as Banner) */}
+      <div className="relative h-[97vh] w-full overflow-hidden rounded-4xl">
+
+        {/* 🔥 Background Video (NOT page-wide fixed — only inside section) */}
+       <img
+  src="/Images/moon.gif"
+  alt="Background GIF"
+  className="absolute inset-0 w-full h-full object-cover"
+/>
+
+        {/* Dark overlay */}
+        <div className="absolute inset-0 bg-linear-to-b from-black/50 via-black/70 to-black/60" />
+
+        {/* CONTENT */}
+        <div className="relative z-10 h-full mx-auto">
+          <div className="px-6 lg:px-14 max-w-4xl  text-white">
+
+            {/* Heading */}
+            <motion.h1
+              initial={{ opacity: 0, y: 40 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1 }}
+              className="bangers-regular text-4xl md:text-6xl lg:text-[200px]
+                         font-bold leading-tight drop-shadow-[0_4px_25px_rgba(255,255,255,0.7)]"
+            >
+               THE COGAN METHOD
+                  <span className="block text-lg md:text-2xl opacity-80">
+              (The Core Blueprint)
+            </span>
+            </motion.h1>
+
+            {/* Paragraph */}
+            {/* <motion.p
+              initial={{ opacity: 0, y: 40 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 0.4 }}
+              className="mt-6 md:text-lg xl:text-xl opacity-80"
+            >
+              We audit your scattered tools—CRM, finance, project management—and
+            build them into one unified system.  
+            <br /><br />
+            The result? **Immediate clarity, faster execution, and one single source of truth**
+            powered by intelligence, not friction.
+            </motion.p> */}
+
+            {/* Connect Button */}
+            {/* <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 0.7 }}
+              className="mt-14"
+            >
+              <motion.button
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+                animate={{ y: [0, -6, 0] }}
+                transition={{ repeat: Infinity, duration: 2 }}
+                className="relative px-8 py-4 rounded-full border border-white/30 text-lg font-medium
+                           hover:bg-white hover:text-black transition-all backdrop-blur-md"
+              >
+                <span className="flex items-center gap-4">
+                  <span className="w-3 h-3 rounded-full bg-white animate-ping" />
+                 Get Connected 
+                </span>
+              </motion.button>
+            </motion.div> */}
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  );
+}

@@ -1,14 +1,15 @@
-import Image from "next/image";
-import HeroSection from "./components/HeroSection";
-import Navbar from "./components/Navbar";
-import TextSection from "./components/TextSection";
 
+import About from "./components/About";
+import Banner from "./components/Banner";
+import TextSection from "./components/TextSection";
+import Service1 from './components/Service1'
 export default function Home() {
   return (
  <div>
-  <Navbar/>
-  <HeroSection/>
+<Banner/>
 <TextSection/>
+<About/>
+<Service1/>
  </div>
   );
 }

@@ -44,16 +44,16 @@ const TextSection = () => {
   return (
     <section 
       ref={ref}
-      className="min-h-screen bg-white flex items-center justify-center px-4 relative"
+      className="py-24 bg-white flex items-center justify-center px-4 relative"
     >
       <div className=" mx-auto text-center">
         <motion.div
           variants={containerVariants}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
-          className="text-4xl md:text-6xl lg:text-8xl font-bold leading-tight"
+          className="text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight"
         >
-          <div className="flex flex-wrap justify-center gap-x-3 gap-y-4">
+          <div className="bangers-regular flex flex-wrap justify-center gap-x-3 gap-y-4">
             {words.map((word, index) => (
               <motion.span
                 key={index}

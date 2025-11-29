@@ -9,35 +9,38 @@ export default function About() {
       <div className="relative h-[97vh] w-full overflow-hidden rounded-4xl">
 
         {/* 🔥 Background Video (NOT page-wide fixed — only inside section) */}
-       <img
-  src="/Images/moon.gif"
-  alt="Background GIF"
-  className="absolute inset-0 w-full h-full object-cover"
-/>
-
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
+        >
+          <source src="/Images/system.mp4" type="video/mp4" />
+        </video>
         {/* Dark overlay */}
-        <div className="absolute inset-0 bg-linear-to-b from-black/50 via-black/70 to-black/60" />
+        <div className="absolute inset-0 bg-linear-to-r from-black/20 via-black/50 to-black/20" />
 
         {/* CONTENT */}
-        <div className="relative z-10 h-full mx-auto">
-          <div className="px-6 lg:px-14 max-w-4xl  text-white">
+        <div className="relative z-10 h-full flex items-center justify-center text-center">
+          <div className="px-6 lg:px-14 max-w-5xl  text-white">
 
             {/* Heading */}
             <motion.h1
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1 }}
-              className="bangers-regular text-4xl md:text-6xl lg:text-[200px]
+              className="bangers-regular text-4xl md:text-6xl lg:text-9xl
                          font-bold leading-tight drop-shadow-[0_4px_25px_rgba(255,255,255,0.7)]"
             >
-               THE COGAN METHOD
-                  <span className="block text-lg md:text-2xl opacity-80">
-              (The Core Blueprint)
+               System Network 
+                  <span className="block text-lg md:text-2xl opacity-80 my-4 lg:my-8">
+              [The Core Blueprint]
             </span>
             </motion.h1>
 
             {/* Paragraph */}
-            {/* <motion.p
+            <motion.p
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.4 }}
@@ -48,10 +51,10 @@ export default function About() {
             <br /><br />
             The result? **Immediate clarity, faster execution, and one single source of truth**
             powered by intelligence, not friction.
-            </motion.p> */}
+            </motion.p>
 
             {/* Connect Button */}
-            {/* <motion.div
+            <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.7 }}
@@ -70,7 +73,7 @@ export default function About() {
                  Get Connected 
                 </span>
               </motion.button>
-            </motion.div> */}
+            </motion.div>
 
           </div>
         </div>

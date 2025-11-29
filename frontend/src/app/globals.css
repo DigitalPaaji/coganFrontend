@@ -33,3 +33,55 @@ body {
   font-family: "Bangers", system-ui;
   letter-spacing: 8px;
 }
+
+
+
+
+
+
+
+
+
+
+
+/* Floating Effect */
+@keyframes float {
+  0% { top: 0; }
+  50% { top: 40px; }
+  100% { top: 0; }
+}
+
+.animate-float {
+  animation: float 2s ease-in-out infinite;
+}
+
+/* Input Styling */
+.input-box {
+  @apply 
+    h-12 px-4 
+    text-white font-medium 
+    border border-white/50 
+    rounded-md 
+    bg-white/10 
+    shadow-[0_0_10px_rgba(255,255,255,0.15)_inset]
+    tracking-wide 
+    transition-all 
+    duration-200;
+}
+
+.input-box:focus-visible {
+  outline: none;
+  border-color: white;
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.4);
+}
+
+.input-box:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+::placeholder {
+  color: #e5e5e5;
+  font-weight: 300;
+  letter-spacing: 0.08rem;
+}

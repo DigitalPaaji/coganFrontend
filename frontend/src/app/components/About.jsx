@@ -8,7 +8,7 @@ export default function About() {
       {/* Fixed Height + Rounded Wrapper (same as Banner) */}
       <div className="relative h-[97vh] w-full overflow-hidden rounded-4xl">
 
-        {/* 🔥 Background Video (NOT page-wide fixed — only inside section) */}
+        {/* Background Video */}
         <video
           autoPlay
           loop
@@ -29,7 +29,8 @@ export default function About() {
             {/* Heading */}
             <motion.h1
               initial={{ opacity: 0, y: 40 }}
-              animate={{ opacity: 1, y: 0 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.4 }}
               transition={{ duration: 1 }}
               className="bangers-regular border-b-2 text-6xl md:text-9xl xl:text-[140px]
                          font-bold leading-tight drop-shadow-[0_4px_25px_rgba(255,255,255,0.7)]"
@@ -40,8 +41,9 @@ export default function About() {
             {/* Paragraph */}
             <motion.p
               initial={{ opacity: 0, y: 40 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1, delay: 0.4 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.4 }}
+              transition={{ duration: 1 }}
               className="mt-6 md:text-lg xl:text-xl opacity-80"
             >
               We are Cogan.life — more than just system integrators.
@@ -53,8 +55,9 @@ export default function About() {
             {/* Connect Button */}
             <motion.div
               initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1, delay: 0.7 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.4 }}
+              transition={{ duration: 1 }}
               className="mt-14"
             >
               <motion.button
@@ -67,14 +70,13 @@ export default function About() {
               >
                 <span className="flex items-center gap-4">
                   <span className="w-3 h-3 rounded-full bg-white animate-ping" />
-                 Get Connected 
+                  Get Connected
                 </span>
               </motion.button>
             </motion.div>
 
           </div>
         </div>
-
       </div>
     </div>
   );

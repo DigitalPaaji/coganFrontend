@@ -36,7 +36,7 @@ const TextSection = () => {
     }
   };
 
-  const text = "We audit your scattered tools (CRM, Finance, Project Management) and build them into one unified system.";
+  const text = "We integrate your scattered business tools and deploy custom AI to eliminate friction and drive efficiency.";
 
   // Split text into words for individual animation
   const words = text.split(' ');
@@ -79,7 +79,8 @@ const TextSection = () => {
         >
           <div className="w-24 h-1 bg-gradient-to-r from-gray-800 to-black mx-auto rounded-full mb-8" />
           <p className="text-gray-600 text-lg md:text-xl max-w-2xl mx-auto">
-            Transform your workflow with seamless integration and unified management
+            <b>We Handle the Grunt Work.</b> <br /><br />
+We are the architects who integrate your systems and deploy AI to handle the grunt work. We build things that change everything for small businesses - System Network , Custom AI Agents 
           </p>
         </motion.div>
 

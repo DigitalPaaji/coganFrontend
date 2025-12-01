@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 export default function About() {
   return (
     <div className="m-2 lg:m-4">
-      {/* Fixed Height + Rounded Wrapper (same as Banner) */}
+      {/* Fixed Height + Rounded Wrapper */}
       <div className="relative h-[97vh] w-full overflow-hidden rounded-4xl">
 
         {/* Background Video */}
@@ -28,11 +28,11 @@ export default function About() {
 
             {/* Heading */}
             <motion.h1
-              initial={{ opacity: 0, y: 40 }}
+              initial={{ opacity: 0, y: 60 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.4 }}
-              transition={{ duration: 1 }}
-              className="bangers-regular border-b-2 text-6xl md:text-9xl xl:text-[140px]
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ duration: 1, ease: "easeOut" }}
+              className="bangers-regular border-b-2 text-6xl md:text-9xl 
                          font-bold leading-tight drop-shadow-[0_4px_25px_rgba(255,255,255,0.7)]"
             >
               About Us
@@ -40,24 +40,28 @@ export default function About() {
 
             {/* Paragraph */}
             <motion.p
-              initial={{ opacity: 0, y: 40 }}
+              initial={{ opacity: 0, y: 60 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.4 }}
-              transition={{ duration: 1 }}
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ duration: 1, ease: "easeOut", delay: 0.15 }}
               className="mt-6 md:text-lg xl:text-xl opacity-80"
             >
-              We are Cogan.life — more than just system integrators.
-              Our name, derived from the Irish meaning ‘Son of a Warrior,’
-              and our symbol, the Triskelion, reflect our philosophy:
-              every business needs a stable core and dynamic momentum to thrive.
+            <b>  Our Philosophy: Core & Momentum.</b>
+<br /> <br />
+<b>COGAN</b> stands for <b>Core Operational Growth & Analysis Network.</b>
+<br /> <br />
+
+             Our name, derived from the Irish meaning <b>`Son of a Warrior`</b>, and our symbol, the <b>Triskelion</b>, define our singular focus and 360 coverage: Every business needs a stable core and the dynamic momentum to thrive.
+           <br />  We are not just system integrators. <b> We are the architects of your AI-Powered organization.</b> We build the stable system, and we automate the movement.
+
             </motion.p>
 
-            {/* Connect Button */}
+            {/* Button */}
             <motion.div
-              initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.4 }}
-              transition={{ duration: 1 }}
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
               className="mt-14"
             >
               <motion.button

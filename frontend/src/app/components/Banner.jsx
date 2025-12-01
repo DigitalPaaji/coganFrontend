@@ -40,7 +40,7 @@ export default function Banner() {
             className="px-6 py-3 rounded-full border-2 border-white text-sm md:text-lg
                        backdrop-blur-[3px]"
           >
-            Connect
+            START THE AUDIT
           </motion.button>
         </div>
 
@@ -52,7 +52,7 @@ export default function Banner() {
             transition={{ duration: 1 }}
             className="bangers-regular border-y-2 text-4xl md:text-6xl lg:text-8xl font-bold leading-tight drop-shadow-[0_4px_25px_rgba(255,255,255,0.7)]"
           >
-            Core Growth, Powered by Intelligent Systems.
+            THE CORE OPERATIONAL GROWTH & ANALYSIS NETWORK.
           </motion.h1>
 
           <motion.p
@@ -61,7 +61,10 @@ export default function Banner() {
             transition={{ duration: 1, delay: 0.4 }}
             className="mt-4 text-lg md:text-xl opacity-80"
           >
-            COGAN - Core Operational Growth & Analysis Network
+            COGAN - 
+We build the core system. We deploy the AI co-pilot.
+
+
           </motion.p>
 
           {/* 

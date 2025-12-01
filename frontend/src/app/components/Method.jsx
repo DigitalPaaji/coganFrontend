@@ -20,7 +20,7 @@ export default function About() {
         </video>
 
         {/* Dark overlay */}
-        <div className="absolute inset-0 bg-linear-to-r from-black/0 via-black/0 to-black/60" />
+        <div className="absolute inset-0 bg-linear-to-r from-black/40 via-black/0 to-black/60" />
 
         {/* CONTENT */}
         <div className="relative z-10 h-full flex items-center justify-end text-right">
@@ -34,7 +34,7 @@ export default function About() {
               className="bangers-regular text-8xl md:text-[100px] lg:text-[140px] xl:text-[200px]
                          font-bold leading-tight drop-shadow-[0_4px_25px_rgba(255,255,255,0.7)]"
             >
-              THE COGAN METHOD
+              THE <br /> COGAN <br /> METHOD
               <span className="block text-lg md:text-2xl opacity-80">
                 (The Core Blueprint)
               </span>

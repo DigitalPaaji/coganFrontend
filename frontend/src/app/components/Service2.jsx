@@ -5,10 +5,9 @@ import { motion } from "framer-motion";
 export default function About() {
   return (
     <div className="m-2 lg:m-4">
-      {/* Fixed Height + Rounded Wrapper (same as Banner) */}
       <div className="relative h-[97vh] w-full overflow-hidden rounded-4xl">
 
-        {/* 🔥 Background Video (NOT page-wide fixed — only inside section) */}
+        {/* Background Video */}
         <video
           autoPlay
           loop
@@ -18,46 +17,49 @@ export default function About() {
         >
           <source src="/Images/ai.mp4" type="video/mp4" />
         </video>
+
         {/* Dark overlay */}
-        <div className="absolute inset-0 bg-linear-to-b from-black/30 via-black/30 to-black/30" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/40 to-black/40" />
 
         {/* CONTENT */}
         <div className="relative z-10 h-full flex items-center justify-center text-center">
-          <div className="px-6 lg:px-14 max-w-5xl  text-white">
+          <div className="px-6 lg:px-14 max-w-5xl text-white">
 
-            {/* Heading */}
+            {/* HEADING */}
             <motion.h1
               initial={{ opacity: 0, y: 40 }}
-              animate={{ opacity: 1, y: 0 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 1 }}
-              className="bangers-regular text-4xl md:text-6xl lg:text-8xl
-                         font-bold leading-tight drop-shadow-[0_4px_25px_rgba(255,255,255,0.7)]"
+              className="bangers-regular text-4xl md:text-6xl lg:text-8xl font-bold leading-tight 
+                         drop-shadow-[0_4px_25px_rgba(255,255,255,0.7)]"
             >
               Custom AI Agents
-                  <span className="block text-lg md:text-2xl opacity-80 my-4 lg:my-8">
-              [Your Digital Co-Pilot]
-            </span>
+              <span className="block text-lg md:text-2xl opacity-80 my-4 lg:my-8">
+                [Your Digital Co-Pilot]
+              </span>
             </motion.h1>
 
-            {/* Paragraph */}
+            {/* PARAGRAPH */}
             <motion.p
               initial={{ opacity: 0, y: 40 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1, delay: 0.4 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ duration: 1, delay: 0.2 }}
               className="mt-6 md:text-lg xl:text-xl opacity-80"
             >
-              We audit your scattered tools—CRM, finance, project management—and
-            build them into one unified system.  
-            <br /><br />
-            The result? **Immediate clarity, faster execution, and one single source of truth**
-            powered by intelligence, not friction.
+              We build custom AI agents that act as your digital co-pilot —
+              automating tasks, enhancing decisions, and creating intelligent workflows.
+              <br /><br />
+              The result? <strong>Smarter operations, instant insights, and AI that truly understands your business.</strong>
             </motion.p>
 
-            {/* Connect Button */}
+            {/* BUTTON */}
             <motion.div
               initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1, delay: 0.7 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ duration: 1, delay: 0.4 }}
               className="mt-14"
             >
               <motion.button
@@ -70,14 +72,13 @@ export default function About() {
               >
                 <span className="flex items-center gap-4">
                   <span className="w-3 h-3 rounded-full bg-white animate-ping" />
-                 Get Connected 
+                  Get Connected
                 </span>
               </motion.button>
             </motion.div>
 
           </div>
         </div>
-
       </div>
     </div>
   );

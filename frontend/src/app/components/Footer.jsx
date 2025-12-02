@@ -26,7 +26,7 @@ export default function About() {
             <img
             src="/Images/logoW.webp"
             alt="COGAN Logo"
-            className="w-28 md:w-28 h-auto drop-shadow-[0_0_15px_rgba(255,255,255,0.7)]"
+            className="w-16 md:w-20  rotate-90 h-auto drop-shadow-[0_0_15px_rgba(255,255,255,0.7)]"
           />
       {/* HEADING */}
             <motion.h1
@@ -34,10 +34,10 @@ export default function About() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 1 }}
-              className="bangers-regular text-4xl md:text-6xl lg:text-8xl font-bold leading-tight 
+              className="bangers-regular text-4xl md:text-6xl lg:text-6xl  leading-tight 
                          drop-shadow-[0_4px_25px_rgba(255,255,255,0.7)]"
             >
-              Cogan
+           COGAN
               {/* <span className="block text-lg md:text-2xl opacity-80 my-4 lg:my-8">
                 [Your Digital Co-Pilot]
               </span> */}
@@ -71,17 +71,13 @@ export default function About() {
 
         </div>
         <div className=" w-full pt-12 text-center ">
-           <div className="flex space-x-4  items-center justify-center mt-4">
-              <a href="#" className="text-[#f3ecdf] hover:text-[#B67032] ">📞 +91 8421373429</a>
-              <a href="#" className="text-[#f3ecdf] hover:text-[#B67032] ">✉️ support@carboncraft.in</a>
-            </div>
-          
+
 
        <div
             className="py-6 md:text-lg border-t opacity-80  text-gray-300"
             >
         
-           <div className="mb-4 flex items-center flex-wrap justify-center gap-12">   <span>📞 +91 8421373429 </span><span> ✉️ support@carboncraft.in </span></div>  
+           <div className="mb-4 flex items-center flex-wrap justify-center gap-12">  <span> ✉️ support@carboncraft.in </span></div>  
            Copyright © 2025 Cogon • Designed by <a href="https://digitalpaaji.com/" className="text-lime-100 ">
             Digital Paaji
             </a> • All Rights Reserved. • Made with ❤️ in India

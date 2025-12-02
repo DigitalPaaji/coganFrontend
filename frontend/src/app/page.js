@@ -13,9 +13,10 @@ export default function Home() {
   return (
  <div>
 <Banner/>
-<TextSection/>
 <About/>
 <Method/>
+{/* <TextSection/> */}
+
 <Service1/>
 <Service2/>
 

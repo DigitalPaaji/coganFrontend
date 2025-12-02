@@ -28,7 +28,7 @@ export default function Banner() {
           <img
             src="/Images/logoW.webp"     // <-- replace with your logo file
             alt="COGAN Logo"
-            className="w-28 md:w-28 h-auto drop-shadow-[0_0_15px_rgba(255,255,255,0.7)]"
+            className=" rotate-90 w-20 md:w-24 h-auto drop-shadow-[0_0_15px_rgba(255,255,255,0.7)]"
           />
 
           {/* Connect Button (Top-right) */}
@@ -45,12 +45,12 @@ export default function Banner() {
         </div>
 
         {/* Center Content */}
-        <div className="relative z-10 text-center px-6 max-w-5xl">
+        <div className="relative z-10 text-center px-6 max-w-4xl">
           <motion.h1
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
-            className="bangers-regular border-y-2 text-4xl md:text-6xl lg:text-8xl font-bold leading-tight drop-shadow-[0_4px_25px_rgba(255,255,255,0.7)]"
+            className="bangers-regular border-y-2 text-3xl md:text-4xl xl:text-6xl  leading-tight drop-shadow-[0_4px_25px_rgba(255,255,255,0.7)]"
           >
             THE CORE OPERATIONAL GROWTH & ANALYSIS NETWORK.
           </motion.h1>

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
 @import "tailwindcss";
 
@@ -30,7 +31,11 @@ body {
 
 
 .bangers-regular {
-  font-family: "Bangers", system-ui;
+  /* font-family: "Bangers", system-ui; */
+   font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+
+  font-style: normal;
   letter-spacing: 8px;
 }
 

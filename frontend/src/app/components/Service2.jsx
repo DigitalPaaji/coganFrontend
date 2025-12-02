@@ -22,63 +22,64 @@ export default function About() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/40 to-black/40" />
 
         {/* CONTENT */}
-        <div className="relative z-10 h-full flex items-center justify-center text-center">
-          <div className="px-6 lg:px-14 max-w-5xl text-white">
-
-            {/* HEADING */}
-            <motion.h1
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.3 }}
-              transition={{ duration: 1 }}
-              className="bangers-regular text-4xl md:text-6xl lg:text-8xl font-bold leading-tight 
-                         drop-shadow-[0_4px_25px_rgba(255,255,255,0.7)]"
-            >
-              Custom AI Agents
-              <span className="block text-lg md:text-2xl opacity-80 my-4 lg:my-8">
-                [Your Digital Co-Pilot]
-              </span>
-            </motion.h1>
-
-            {/* PARAGRAPH */}
-            <motion.p
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.3 }}
-              transition={{ duration: 1, delay: 0.2 }}
-              className="mt-6 md:text-lg xl:text-xl opacity-80"
-            >
-              We build custom AI agents that act as your digital co-pilot —
-              automating tasks, enhancing decisions, and creating intelligent workflows.
-              <br /><br />
-              The result? <strong>Smarter operations, instant insights, and AI that truly understands your business.</strong>
-            </motion.p>
-
-            {/* BUTTON */}
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.3 }}
-              transition={{ duration: 1, delay: 0.4 }}
-              className="mt-14"
-            >
-              <motion.button
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
-                animate={{ y: [0, -6, 0] }}
-                transition={{ repeat: Infinity, duration: 2 }}
-                className="relative px-8 py-4 rounded-full border border-white/30 text-lg font-medium
-                           hover:bg-white hover:text-black transition-all backdrop-blur-md"
+         <div className="relative z-10 h-full flex items-end py-24 justify-end text-right">
+            <div className="px-6 lg:px-14 max-w-5xl text-white">
+  
+              {/* HEADING */}
+              <motion.h1
+                initial={{ opacity: 0, y:                    40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.3 }}
+                transition={{ duration: 1 }}
+                className="bangers-regular text-4xl md:text-6xl lg:text-7xl                       leading-tight drop-shadow-[0_4px_25px_rgba(255,255,255,0.7)]"
               >
-                <span className="flex items-center gap-4">
-                  <span className="w-3 h-3 rounded-full bg-white animate-ping" />
-                  Get Connected
-                </span>
-              </motion.button>
-            </motion.div>
-
+              AI Infrastructure and Process Automation
+  
+                {/* <span className="block text-lg md:text-2xl opacity-80 my-4 lg:my-8">
+                  [The Core Blueprint]
+                </span> */}
+              </motion.h1>
+  
+              {/* PARAGRAPH */}
+              <motion.p
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.3 }}
+                transition={{ duration: 1, delay: 0.2 }}
+                className="mt-6 md:text-lg xl:text-xl opacity-80"
+              >
+         <span className="text-2xl">  The Unification of Systems </span> <br /><br />
+               We design and implement the robust infrastructure that underpins your future growth. We stop the chaos of scattered tools, creating a unified, intelligent network where data flows seamlessly. This is the Core Blueprint for efficiency.
+  
+           
+           
+              </motion.p>
+  
+              {/* BUTTON */}
+              {/* <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.3 }}
+                transition={{ duration: 1, delay: 0.4 }}
+                className="mt-14"
+              >
+                <motion.button
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.9 }}
+                  animate={{ y: [0, -6, 0] }}
+                  transition={{ repeat: Infinity, duration: 2 }}
+                  className="relative px-8 py-4 rounded-full border border-white/30 text-lg font-medium
+                             hover:bg-white hover:text-black transition-all backdrop-blur-md"
+                >
+                  <span className="flex items-center gap-4">
+                    <span className="w-3 h-3 rounded-full bg-white animate-ping" />
+                    Get Connected
+                  </span>
+                </motion.button>
+              </motion.div> */}
+  
+            </div>
           </div>
-        </div>
       </div>
     </div>
   );

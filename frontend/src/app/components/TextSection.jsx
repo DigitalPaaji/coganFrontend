@@ -51,7 +51,7 @@ const TextSection = () => {
           variants={containerVariants}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
-          className="text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight"
+          className="text-3xl md:text-5xl lg:text-6xl xl:text-7xl leading-tight"
         >
           <div className="bangers-regular flex flex-wrap justify-center gap-x-3 gap-y-4">
             {words.map((word, index) => (

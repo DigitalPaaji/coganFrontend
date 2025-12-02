@@ -15,7 +15,7 @@ export default function Contact() {
       {
         opacity: 0,
         y: 80,
-        filter: "blur(10px)",
+        filter: "blur(10px)",  
       },
       {
         opacity: 1,

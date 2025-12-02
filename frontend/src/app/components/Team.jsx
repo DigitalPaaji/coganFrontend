@@ -28,7 +28,7 @@ export default function About() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 1 }}
-              className="bangers-regular text-4xl md:text-6xl lg:text-8xl font-bold leading-tight 
+              className="bangers-regular text-4xl lg:text-6xl leading-tight 
                          drop-shadow-[0_4px_25px_rgba(255,255,255,0.7)]"
             >
               The Brains Behind
@@ -41,14 +41,15 @@ export default function About() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 1, delay: 0.2 }}
-              className="mt-6 md:text-lg xl:text-xl opacity-80"
+              className="mt-6 text-lg opacity-80"
             >
-              <b>Driven by Experience. Built for the Future.
-</b><br /><br />
+            <span className=" md:text-lg xl:text-xl">
+              Driven by Experience. Built for the Future.  </span>
+<br /><br />
              We are a specialized team of architects, engineers, and strategists with a shared commitment to operational excellence. Our decades of experience in technical content, systems integration, and AI deployment ensure we deliver solutions that are not just intelligent, but rock-solid.
               <br /><br />
-        <strong> We translate complex technology into concrete business outcomes.
-</strong>
+        We translate complex technology into concrete business outcomes.
+
             </motion.p>
 
 

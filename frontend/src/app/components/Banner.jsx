@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 export default function Banner() {
   return (
     <div className="m-2 lg:m-4">
-      <div className="relative h-[97vh]  w-full overflow-hidden text-white flex items-center justify-center rounded-4xl">
+      <div className="relative h-[80vh] lg:h-[97vh]  w-full overflow-hidden text-white flex items-end p-6 lg:p-12 xl:p-24 justify-start rounded-4xl">
 
         {/* Background Video */}
         <video
@@ -15,11 +15,11 @@ export default function Banner() {
           playsInline
           className="absolute inset-0 w-full h-full object-cover"
         >
-          <source src="/Images/banner.mp4" type="video/mp4" />
+          <source src="/Images/girl.mp4" type="video/mp4" />
         </video>
 
         {/* Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/60 to-black/50" />
+        <div className="absolute inset-0 bg-linear-to-r from-black/80 via-black/00 to-black/0" />
 
         {/* --- TOP HEADER (LOGO LEFT + CONNECT BUTTON RIGHT) --- */}
         <div className="absolute top-5 left-8 right-8 flex items-center justify-between z-20">
@@ -37,35 +37,35 @@ export default function Banner() {
             whileTap={{ scale: 0.95 }}
             animate={{ y: [0, -3, 0] }}
             transition={{ repeat: Infinity, duration: 2 }}
-            className="px-6 py-3 rounded-full border-2 border-white text-sm md:text-lg
+            className="px-6 py-3 rounded-full border-2 border-white text-lg
                        backdrop-blur-[3px]"
           >
-            START THE AUDIT
+            cogan.life
           </motion.button>
         </div>
 
         {/* Center Content */}
-        <div className="relative z-10 text-center px-6 max-w-4xl">
+        <div className="relative z-10 text-start px-6 max-w-4xl  backdrop-blur-[3px]">
           <motion.h1
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
-            className="bangers-regular border-y-2 text-3xl md:text-4xl xl:text-6xl  leading-tight drop-shadow-[0_4px_25px_rgba(255,255,255,0.7)]"
+            className="bangers-regular  text-3xl md:text-4xl xl:text-6xl  leading-tight drop-shadow-[0_4px_25px_rgba(255,255,255,0.7)]"
           >
             THE CORE OPERATIONAL GROWTH & ANALYSIS NETWORK.
           </motion.h1>
 
-          <motion.p
+          {/* <motion.p
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.4 }}
-            className="mt-4 text-lg md:text-xl opacity-80"
+            className="mt-4 text-lg md:text-xl opacity-80  "
           >
             COGAN - 
 We build the core system. We deploy the AI co-pilot.
 
 
-          </motion.p>
+          </motion.p> */}
 
           {/* 
           <motion.div

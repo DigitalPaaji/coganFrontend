@@ -47,7 +47,7 @@ export default function Contact() {
           <source src="/Images/about.mp4" type="video/mp4" />
         </video>
 
-          <div className="absolute inset-0 rounded-4xl bg-gradient-to-b from-black/50 via-black/70 to-black/60" />
+          <div className="absolute inset-0 rounded-4xl bg-linear-to-r from-white/20 via-[#000000cc] to-white/10" />
 
 
       {/* Floating Form With Scroll Animation */}

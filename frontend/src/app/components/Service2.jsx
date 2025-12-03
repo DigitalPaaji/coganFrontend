@@ -31,9 +31,10 @@ export default function About() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.3 }}
                 transition={{ duration: 1 }}
-                className="bangers-regular text-4xl md:text-6xl lg:text-7xl                       leading-tight drop-shadow-[0_4px_25px_rgba(255,255,255,0.7)]"
+                className="bangers-regular text-4xl md:text-5xl lg:text-7xl                       leading-tight drop-shadow-[0_4px_25px_rgba(255,255,255,0.7)]"
               >
-              AI Infrastructure and Process Automation
+              Custom AI Models
+
   
                 {/* <span className="block text-lg md:text-2xl opacity-80 my-4 lg:my-8">
                   [The Core Blueprint]
@@ -48,36 +49,15 @@ export default function About() {
                 transition={{ duration: 1, delay: 0.2 }}
                 className="mt-6 md:text-lg xl:text-xl opacity-80"
               >
-         <span className="text-2xl">  The Unification of Systems </span> <br /><br />
-               We design and implement the robust infrastructure that underpins your future growth. We stop the chaos of scattered tools, creating a unified, intelligent network where data flows seamlessly. This is the Core Blueprint for efficiency.
+         <span className="text-2xl">  Your Hyper-Efficient Digital Co-Pilot. </span> <br /><br />
+               We build bespoke AI agents tailored specifically to your unique workflows. These are not off-the-shelf bots; they are custom models trained to automate your most time-consuming tasks—from lead qualification to complex data organization—giving your human team back their time.
+
   
            
            
               </motion.p>
   
-              {/* BUTTON */}
-              {/* <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, amount: 0.3 }}
-                transition={{ duration: 1, delay: 0.4 }}
-                className="mt-14"
-              >
-                <motion.button
-                  whileHover={{ scale: 1.1 }}
-                  whileTap={{ scale: 0.9 }}
-                  animate={{ y: [0, -6, 0] }}
-                  transition={{ repeat: Infinity, duration: 2 }}
-                  className="relative px-8 py-4 rounded-full border border-white/30 text-lg font-medium
-                             hover:bg-white hover:text-black transition-all backdrop-blur-md"
-                >
-                  <span className="flex items-center gap-4">
-                    <span className="w-3 h-3 rounded-full bg-white animate-ping" />
-                    Get Connected
-                  </span>
-                </motion.button>
-              </motion.div> */}
-  
+           
             </div>
           </div>
       </div>

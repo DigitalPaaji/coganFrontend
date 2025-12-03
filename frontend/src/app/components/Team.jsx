@@ -13,10 +13,18 @@ export default function About() {
           className="absolute inset-0 w-full h-full object-cover "
         />
         
-
+        {/* <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
+        >
+          <source src="/Images/team.mp4" type="video/mp4" />
+        </video> */}
 
         {/* Dark overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/40 to-black/40" />
+             <div className="absolute inset-0 bg-gradient-to-r from-white/10 via-white/5 to-white/10" />
 
         {/* CONTENT */}
         <div className="relative z-10 h-full ">

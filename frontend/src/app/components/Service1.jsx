@@ -13,9 +13,9 @@ export default function About() {
           loop
           muted
           playsInline
-          className="absolute inset-0 w-full h-full object-cover"
+          className="absolute inset-0 w-full h-full object-cover rotate-y-180"
         >
-          <source src="/Images/system.mp4" type="video/mp4" />
+          <source src="/Images/method.mp4" type="video/mp4" />
         </video>
 
         {/* Fixed Overlay */}
@@ -31,7 +31,7 @@ export default function About() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 1 }}
-              className="bangers-regular text-4xl md:text-6xl lg:text-7xl                       leading-tight drop-shadow-[0_4px_25px_rgba(255,255,255,0.7)]"
+              className="bangers-regular text-4xl md:text-5xl lg:text-7xl                       leading-tight drop-shadow-[0_4px_25px_rgba(255,255,255,0.7)]"
             >
             AI Infrastructure and Process Automation
 
@@ -55,28 +55,7 @@ export default function About() {
          
             </motion.p>
 
-            {/* BUTTON */}
-            {/* <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.3 }}
-              transition={{ duration: 1, delay: 0.4 }}
-              className="mt-14"
-            >
-              <motion.button
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
-                animate={{ y: [0, -6, 0] }}
-                transition={{ repeat: Infinity, duration: 2 }}
-                className="relative px-8 py-4 rounded-full border border-white/30 text-lg font-medium
-                           hover:bg-white hover:text-black transition-all backdrop-blur-md"
-              >
-                <span className="flex items-center gap-4">
-                  <span className="w-3 h-3 rounded-full bg-white animate-ping" />
-                  Get Connected
-                </span>
-              </motion.button>
-            </motion.div> */}
+     
 
           </div>
         </div>

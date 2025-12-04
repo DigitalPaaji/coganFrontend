@@ -34,18 +34,18 @@ export default function Contact() {
 
   return (
     <div className="m-2 lg:m-4 rounded-4xl border border-amber-400">
-    <div className="w-full min-h-screen flex flex-col items-center justify-end relative py-20  ">
+    <div className="w-full min-h-screen relative py-20 px-6 lg:px-24 ">
 
         {/* Background Video */}
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="absolute inset-0 w-full h-full rounded-4xl object-cover "
-        >
-          <source src="/Images/about.mp4" type="video/mp4" />
-        </video>
+        <img
+          // autoPlay
+          // loop
+          // muted
+          // playsInline
+          src={'/Images/contact.jpg'}
+          className="absolute inset-0 w-full h-full rounded-4xl object-cover "/>
+          {/* <source src="/Images/about.mp4" type="video/mp4" />
+        </video> */}
 
           <div className="absolute inset-0 rounded-4xl bg-linear-to-r from-white/20 via-[#000000cc] to-white/10" />
 
@@ -55,7 +55,7 @@ export default function Contact() {
   ref={formRef}
   className="
     opacity-0 translate-y-10
-    animate-float relative z-30 
+   relative z-30 
     w-[90%] md:w-[70%] lg:w-[55%] max-w-3xl 
     p-8 rounded-xl border-2 border-white 
     bg-white/10 backdrop-blur-xl 
@@ -63,7 +63,7 @@ export default function Contact() {
     flex flex-col gap-5
   "
 >
-  <div className="text-center text-white text-4xl font-semibold tracking-[6px] drop-shadow-md">
+  <div className="text-center text-white text-3xl lg:text-4xl tracking-[6px] drop-shadow-md">
     CONTACT
   </div>
 
@@ -146,7 +146,7 @@ export default function Contact() {
 
 
       {/* Rays */}
-      <div className="relative bottom-0 z-20 animate-rays">
+      {/* <div className="relative bottom-0 z-20 animate-rays">
         <svg
           fill="none"
           viewBox="0 0 299 152"
@@ -173,10 +173,10 @@ export default function Contact() {
             </linearGradient>
           </defs>
         </svg>
-      </div>
+      </div> */}
 
       {/* Bottom Disk Image */}
-      <div className="relative z-10 -mt-3">
+      {/* <div className="relative z-10 -mt-3">
         <Image
           src="/Images/disk.png"
           alt="Hole"
@@ -184,7 +184,7 @@ export default function Contact() {
           height={100}
           className="object-cover border-2"
         />
-      </div>
+      </div> */}
     </div>
     </div>
   );

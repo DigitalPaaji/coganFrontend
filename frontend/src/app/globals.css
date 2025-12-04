@@ -49,17 +49,6 @@ body {
 
 
 
-/* Floating Effect */
-@keyframes float {
-  0% { top: 0; }
-  50% { top: 40px; }
-  100% { top: 0; }
-}
-
-.animate-float {
-  animation: float 2s ease-in-out infinite;
-}
-
 /* Input Styling */
 .input-box {
   @apply 

@@ -15,11 +15,11 @@ export default function About() {
           playsInline
           className="absolute inset-0 w-full h-full object-cover"
         >
-          <source src="/Images/ai.mp4" type="video/mp4" />
+          <source src="/Images/system.mp4" type="video/mp4" />
         </video>
 
         {/* Dark overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/40 to-black/40" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/40 via-white/40 to-black/40" />
 
         {/* CONTENT */}
          <div className="relative z-10 h-full flex items-end py-24 justify-end text-right">

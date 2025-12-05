@@ -46,7 +46,7 @@ export default function About() {
               transition={{ duration: 1, ease: "easeOut", delay: 0.15 }}
               className="mt-6 md:text-lg xl:text-xl opacity-80"
             >
-         Our Philosophy: Core & Momentum.
+        <strong className="text-2xl"> Our Philosophy: Core & Momentum.</strong>   
 <br /> <br />
 COGAN stands for Core Operational Growth & Analysis Network.
 <br /> <br />

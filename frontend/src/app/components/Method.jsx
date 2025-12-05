@@ -47,12 +47,12 @@ export default function About() {
                      transition={{ duration: 1, ease: "easeOut", delay: 0.15 }}
                      className="mt-6 md:text-lg xl:text-xl opacity-80"
                    >
-          We Handle the Grunt Work.        
-<br /><br />
+       <strong className="text-2xl">   We Handle the Grunt Work.        </strong>
+<br />
 We integrate your scattered business tools and deploy custom AI to eliminate friction and drive efficiency. We deliver two fundamental results:
 
 <br /><br />
-The Core Blueprint (System Network)
+<strong className="text-2xl">The Core Blueprint (System Network) </strong><br/>
 We audit all your existing tools—CRM, Finance, Project Management, and more—and unify them into one clear system. The result is immediate clarity, faster execution, and a single source of truth for your entire operation.
                 </motion.p>
        

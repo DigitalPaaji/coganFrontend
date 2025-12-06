@@ -48,7 +48,7 @@ export default function About() {
               transition={{ duration: 1, delay: 0.2 }}
               className="mt-6 md:text-lg xl:text-xl opacity-80"
             >
-       <span className="text-2xl">  The Unification of Systems </span> <br /><br />
+       <span className="text-2xl">  <strong className="text-2xl"> The Unification of Systems       </strong></span> <br /><br />
              We design and implement the robust infrastructure that underpins your future growth. We stop the chaos of scattered tools, creating a unified, intelligent network where data flows seamlessly. This is the Core Blueprint for efficiency.
 
          

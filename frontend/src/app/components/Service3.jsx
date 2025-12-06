@@ -19,7 +19,7 @@ export default function About() {
         </video>
 
         {/* Dark overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/40 to-black/40" />
+        <div className="absolute inset-0 bg-linear-to-b from-black/40 via-black/40 to-black/40" />
 
         {/* CONTENT */}
          <div className="relative z-10 h-full flex items-end py-24 justify-end text-right">
@@ -49,7 +49,7 @@ export default function About() {
                 transition={{ duration: 1, delay: 0.2 }}
                 className="mt-6 md:text-lg xl:text-xl opacity-80"
               >
-         <span className="text-2xl">  The Starting Point: Clarity.
+         <span className="text-2xl">  <strong className="text-2xl"> The Starting Point: Clarity.</strong>
  </span> <br /><br />
             Every project begins with a deep-dive audit of your current processes and tools. We identify the friction points and the growth opportunities, providing a precise roadmap to integrate your systems and deploy AI for maximum impact. Know exactly what you need to build.
 

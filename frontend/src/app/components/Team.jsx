@@ -52,7 +52,8 @@ export default function About() {
               className="mt-6 text-lg opacity-80"
             >
             <span className=" md:text-lg xl:text-xl">
-              Driven by Experience. Built for the Future.  </span>
+            <strong className="text-2xl">
+            Driven by Experience. Built for the Future.      </strong> </span>
 <br /><br />
              We are a specialized team of architects, engineers, and strategists with a shared commitment to operational excellence. Our decades of experience in technical content, systems integration, and AI deployment ensure we deliver solutions that are not just intelligent, but rock-solid.
               <br /><br />

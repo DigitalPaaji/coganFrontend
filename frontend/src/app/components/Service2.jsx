@@ -49,7 +49,7 @@ export default function About() {
                 transition={{ duration: 1, delay: 0.2 }}
                 className="mt-6 md:text-lg xl:text-xl opacity-80"
               >
-         <span className="text-2xl">  Your Hyper-Efficient Digital Co-Pilot. </span> <br /><br />
+         <span className="text-2xl"> <strong className="text-2xl">  Your Hyper-Efficient Digital Co-Pilot.     </strong> </span> <br /><br />
                We build bespoke AI agents tailored specifically to your unique workflows. These are not off-the-shelf bots; they are custom models trained to automate your most time-consuming tasks—from lead qualification to complex data organization—giving your human team back their time.
 
   

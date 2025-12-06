@@ -28,7 +28,7 @@ export default function Banner() {
           <img
             src="/Images/logoW.webp"     // <-- replace with your logo file
             alt="COGAN Logo"
-            className=" rotate-90 w-20 md:w-24 h-auto drop-shadow-[0_0_15px_rgba(255,255,255,0.7)]"
+            className=" rotate-[85deg] w-20 md:w-24 h-auto drop-shadow-[0_0_15px_rgba(255,255,255,0.7)]"
           />
 
           {/* Connect Button (Top-right) */}

@@ -26,7 +26,7 @@ export default function About() {
             <img
             src="/Images/logoW.webp"
             alt="COGAN Logo"
-            className="w-16 md:w-20  rotate-90 h-auto drop-shadow-[0_0_15px_rgba(255,255,255,0.7)]"
+            className="w-16 md:w-20   rotate-[85deg] h-auto drop-shadow-[0_0_15px_rgba(255,255,255,0.7)]"
           />
       {/* HEADING */}
             <motion.h1

@@ -64,49 +64,28 @@ export default function About() {
 
 
           </div>
-<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 px-6 lg:px-14">
+<div className="flex items-center justify-start gap-8 px-6 lg:px-14">
   
   {/* Team Member Card */}
   <div className="relative overflow-hidden border rounded-tl-4xl rounded-br-4xl  shadow-2xl group">
     
     {/* IMAGE */}
     <img
-      src="/Images/5.png"
-      alt="Team Member"
-      className="w-full h-[380px] object-cover transition-transform duration-700 group-hover:scale-110"
-    />
-
-    {/* DARK OVERLAY */}
-    <div className="absolute inset-0 bg-black/30 group-hover:bg-black/40 transition-all"></div>
-
-    {/* NAME & DESIGNATION */}
-    <div className="absolute bottom-0 left-4 text-white backdrop-blur-xs w-full py-4 ">
-      <h3 className="text-xl drop-shadow-lg">Kashish</h3>
-      <p className="text-sm opacity-80 ">Founder & AI Engineer</p>
-    </div>
-
-  </div>
-
-    <div className="relative overflow-hidden border rounded-tl-4xl rounded-br-4xl  shadow-2xl group">
-    
-    {/* IMAGE */}
-    <img
       src="/Images/1.png"
       alt="Team Member"
-      className="w-full h-[380px] object-cover transition-transform duration-700 group-hover:scale-110"
+      className="w-full h-[380px] object-cover transition-transform duration-700 "
     />
 
     {/* DARK OVERLAY */}
     <div className="absolute inset-0 bg-black/30 group-hover:bg-black/40 transition-all"></div>
 
     {/* NAME & DESIGNATION */}
-    <div className="absolute bottom-0 left-4 text-white backdrop-blur-xs w-full py-4 ">
-      <h3 className="text-xl drop-shadow-lg">Kashish</h3>
-      <p className="text-sm opacity-80 ">Founder & AI Engineer</p>
+    <div className="absolute bottom-0 left-4 text-white backdrop-blur-xs w-full py-2 ">
+      <h3 className="text-lg drop-shadow-lg">Vikram Saini</h3>
+      <p className="text-sm opacity-80 ">AI Technology Advisor</p>
     </div>
 
   </div>
-
 
     <div className="relative overflow-hidden border rounded-tl-4xl rounded-br-4xl  shadow-2xl group">
     
@@ -114,41 +93,19 @@ export default function About() {
     <img
       src="/Images/2.png"
       alt="Team Member"
-      className="w-full h-[380px] object-cover transition-transform duration-700 group-hover:scale-110"
+      className="w-full h-[380px] object-cover transition-transform duration-700 "
     />
 
     {/* DARK OVERLAY */}
     <div className="absolute inset-0 bg-black/30 group-hover:bg-black/40 transition-all"></div>
 
     {/* NAME & DESIGNATION */}
-    <div className="absolute bottom-0 left-4 text-white backdrop-blur-xs w-full py-4 ">
-      <h3 className="text-xl drop-shadow-lg">Kashish</h3>
-      <p className="text-sm opacity-80 ">Founder & AI Engineer</p>
+    <div className="absolute bottom-0 left-4 text-white backdrop-blur-xs w-full py-2 ">
+      <h3 className="text-lg drop-shadow-lg">Rishi Raj Singh</h3>
+      <p className="text-sm opacity-80 ">AI Technology Advisor</p>
     </div>
 
   </div>
-
-
-    <div className="relative overflow-hidden border rounded-tl-4xl rounded-br-4xl  shadow-2xl group">
-    
-    {/* IMAGE */}
-    <img
-      src="/Images/4.png"
-      alt="Team Member"
-      className="w-full h-[380px] object-cover transition-transform duration-700 group-hover:scale-110"
-    />
-
-    {/* DARK OVERLAY */}
-    <div className="absolute inset-0 bg-black/30 group-hover:bg-black/40 transition-all"></div>
-
-    {/* NAME & DESIGNATION */}
-    <div className="absolute bottom-0 left-4 text-white backdrop-blur-xs w-full py-4 ">
-      <h3 className="text-xl drop-shadow-lg">Kashish</h3>
-      <p className="text-sm opacity-80 ">Founder & AI Engineer</p>
-    </div>
-
-  </div>
-
 
     <div className="relative overflow-hidden border rounded-tl-4xl rounded-br-4xl  shadow-2xl group">
     
@@ -156,19 +113,23 @@ export default function About() {
     <img
       src="/Images/3.png"
       alt="Team Member"
-      className="w-full h-[380px] object-cover transition-transform duration-700 group-hover:scale-110"
+      className="w-full h-[380px] object-cover transition-transform duration-700 "
     />
 
     {/* DARK OVERLAY */}
     <div className="absolute inset-0 bg-black/30 group-hover:bg-black/40 transition-all"></div>
 
     {/* NAME & DESIGNATION */}
-    <div className="absolute bottom-0 left-4 text-white backdrop-blur-xs w-full py-4 ">
-      <h3 className="text-xl drop-shadow-lg">Kashish</h3>
-      <p className="text-sm opacity-80 ">Founder & AI Engineer</p>
+    <div className="absolute bottom-0 left-4 text-white backdrop-blur-xs w-full py-2 ">
+      <h3 className="text-lg drop-shadow-lg">Kashish</h3>
+      <p className="text-sm opacity-80 ">Full Stack Developer</p>
     </div>
 
   </div>
+ 
+
+
+
 
 </div>
 

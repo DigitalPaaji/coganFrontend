@@ -108,7 +108,7 @@ export default function Contact() {
         }
       `}</style>
 
-      <div className="m-2 lg:m-4 rounded-4xl border border-amber-400">
+      <div className="m-2 lg:m-4 rounded-4xl ">
         <div className="w-full min-h-screen relative py-20 px-6 lg:px-24 ">
 
           <img

@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 
 export default function About() {
   return (
-   
-      <div className="relative  w-full overflow-hidden py-24">
+  
+      <div className="  relative  w-full overflow-hidden py-24">
 
         {/* Background Video */}
         <img
@@ -64,10 +64,10 @@ export default function About() {
 
 
           </div>
-<div className="flex items-center justify-start gap-8 px-6 lg:px-14">
+<div className="flex items-center justify-center lg:justify-start flex-wrap gap-8 px-6 lg:px-14">
   
   {/* Team Member Card */}
-  <div className="relative overflow-hidden border rounded-tl-4xl rounded-br-4xl  shadow-2xl group">
+  <div className="relative overflow-hidden  rounded-tl-4xl rounded-br-4xl  shadow-2xl group">
     
     {/* IMAGE */}
     <img
@@ -87,7 +87,7 @@ export default function About() {
 
   </div>
 
-    <div className="relative overflow-hidden border rounded-tl-4xl rounded-br-4xl  shadow-2xl group">
+    <div className="relative overflow-hidden  rounded-tl-4xl rounded-br-4xl  shadow-2xl group">
     
     {/* IMAGE */}
     <img
@@ -107,7 +107,7 @@ export default function About() {
 
   </div>
 
-    <div className="relative overflow-hidden border rounded-tl-4xl rounded-br-4xl  shadow-2xl group">
+    <div className="relative overflow-hidden  rounded-tl-4xl rounded-br-4xl  shadow-2xl group">
     
     {/* IMAGE */}
     <img

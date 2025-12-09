@@ -85,7 +85,7 @@ export default function Contact() {
   }, []);
 
   return (
-    <>
+    <div className="m-2 lg:m-4">
       <Toaster position="top-right" />
 
       <style>{`
@@ -108,123 +108,132 @@ export default function Contact() {
         }
       `}</style>
 
-      <div className="m-2 lg:m-4 rounded-4xl ">
-        <div className="w-full min-h-screen relative py-20 px-6 lg:px-24 ">
+    <div className="relative w-full min-h-screen py-20 px-6 lg:px-24 rounded-4xl overflow-hidden">
 
-          <img
-            src={"/Images/contact.jpg"}
-            className="absolute inset-0 w-full h-full rounded-4xl object-cover"
-          />
+  {/* Background Image */}
+  <div className="absolute inset-0 rounded-4xl">
+    <img
+      src="/Images/contact.jpg"
+      className="w-full h-full object-cover rounded-4xl"
+    />
+  </div>
 
-          <div className="absolute inset-0 rounded-4xl bg-linear-to-r from-white/20 via-[#000000cc] to-white/10" />
+  {/* Overlay */}
+  <div className="absolute inset-0 bg-black/40 rounded-4xl backdrop-blur-[2px]"></div>
 
-          <form
-            ref={formRef}
-            onSubmit={handleSubmit}
-            className="
-              opacity-0 translate-y-10
-              relative z-30 
-              w-[90%] md:w-[70%] lg:w-[55%] max-w-3xl 
-              p-8 rounded-xl border-2 border-white 
-              bg-white/10 backdrop-blur-xl 
-              shadow-[0_0_40px_rgba(255,255,255,0.6)_inset,0_0_20px_rgba(255,255,255,0.90)] 
-              flex flex-col gap-5
-            "
-          >
-            <div className="text-center text-white text-3xl lg:text-4xl tracking-[6px] drop-shadow-md">
-              CONTACT
-            </div>
-
-            <input
-              type="text"
-              name="name"
-              placeholder="Your Full Name"
-              className="input-box"
-              value={formData.name}
-              onChange={handleChange}
-              required
-            />
-
-            <input
-              type="email"
-              name="email"
-              placeholder="Your Work Email Address"
-              className="input-box"
-              value={formData.email}
-              onChange={handleChange}
-              required
-            />
-
-            <input
-              type="text"
-              name="company"
-              placeholder="Company Name"
-              className="input-box"
-              value={formData.company}
-              onChange={handleChange}
-            />
-
-            <input
-              type="text"
-              name="role"
-              placeholder="Your Role (e.g., CEO, Head of Operations)"
-              className="input-box"
-              value={formData.role}
-              onChange={handleChange}
-            />
-
-            <select
-              name="topic"
-              className="
-                input-box w-full text-black appearance-none 
-                hover:bg-black hover:text-white transition-all duration-300 cursor-pointer
-              "
-              value={formData.topic}
-              onChange={handleChange}
-              required
-            >
-              <option  className="bg-black/90 text-white hover:bg-white hover:text-white" value="" disabled>
-                Select what you need help with
-              </option>
-              <option className="bg-black/90 text-white hover:bg-white hover:text-white">I need a full System Audit (Consultation)</option>
-              <option  className="bg-black/90 text-white hover:bg-white hover:text-white">I want to build a Custom AI Model</option>
-              <option  className="bg-black/90 text-white hover:bg-white hover:text-white">I need help with Infrastructure & Automation</option>
-              <option  className="bg-black/90 text-white hover:bg-white hover:text-white">General Inquiry</option>
-            </select>
-
-            <textarea
-              name="message"
-              placeholder="Briefly describe your biggest operational challenge."
-              rows="4"
-              className="input-box resize-none"
-              value={formData.message}
-              onChange={handleChange}
-              required
-            ></textarea>
-
-            {/* LOADING BUTTON */}
-            <button
-              disabled={loading}
-              className={`
-                h-14 text-white text-xl tracking-wider 
-                border border-white 
-                bg-linear-to-r from-black via-neutral-800 to-black cursor-pointer
-                transition-all duration-300
-                ${loading ? "opacity-70 cursor-not-allowed scale-[1.00]" : "hover:shadow-[0_0_6px_#fff] hover:scale-[1.03]"}
-              `}
-            >
-              {loading ? (
-                <div className="flex items-center justify-center gap-3">
-                  <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
-                  Sending...
-                </div>
-              ) : (
-                "Submit"
-              )}
-            </button>
-          </form>
+  {/* CONTENT GRID */}
+  <div className="relative z-20 grid grid-cols-1 lg:grid-cols-2 items-center min-h-[80vh]">
+    
+    {/* LEFT SIDE FORM */}
+    <div className="flex justify-center lg:justify-start">
+      <form
+        ref={formRef}
+        onSubmit={handleSubmit}
+        className="
+          opacity-0 translate-y-10
+          w-[90%] md:w-[70%] lg:w-[90%] max-w-xl
+          p-8 rounded-xl border border-white/60
+          bg-white/10 backdrop-blur-xl
+          shadow-[0_0_40px_rgba(255,255,255,0.4)_inset,0_0_20px_rgba(255,255,255,0.6)]
+          flex flex-col gap-5
+        "
+      >
+        <div className="text-center lg:text-left text-white text-3xl lg:text-4xl tracking-[6px] drop-shadow-md">
+          CONTACT
         </div>
-      </div>
-    </>
+
+        <input
+          type="text"
+          name="name"
+          placeholder="Your Full Name"
+          className="input-box"
+          value={formData.name}
+          onChange={handleChange}
+          required
+        />
+
+        <input
+          type="email"
+          name="email"
+          placeholder="Your Work Email Address"
+          className="input-box"
+          value={formData.email}
+          onChange={handleChange}
+          required
+        />
+
+        <input
+          type="text"
+          name="company"
+          placeholder="Company Name"
+          className="input-box"
+          value={formData.company}
+          onChange={handleChange}
+        />
+
+        <input
+          type="text"
+          name="role"
+          placeholder="Your Role (e.g., CEO, Head of Operations)"
+          className="input-box"
+          value={formData.role}
+          onChange={handleChange}
+        />
+
+        <select
+          name="topic"
+          className="
+            input-box w-full text-black appearance-none
+            hover:bg-black hover:text-white transition-all duration-300 cursor-pointer
+          "
+          value={formData.topic}
+          onChange={handleChange}
+          required
+        >
+          <option value="" disabled>Select what you need help with</option>
+          <option>I need a full System Audit (Consultation)</option>
+          <option>I want to build a Custom AI Model</option>
+          <option>I need help with Infrastructure & Automation</option>
+          <option>General Inquiry</option>
+        </select>
+
+        <textarea
+          name="message"
+          placeholder="Briefly describe your biggest operational challenge."
+          rows="4"
+          className="input-box resize-none"
+          value={formData.message}
+          onChange={handleChange}
+          required
+        ></textarea>
+
+        <button
+          disabled={loading}
+          className={`
+            h-14 text-white text-xl tracking-wider 
+            border border-white 
+            bg-linear-to-r from-black via-neutral-800 to-black cursor-pointer
+            transition-all duration-300
+            ${loading ? "opacity-70 cursor-not-allowed scale-[1.00]" : "hover:shadow-[0_0_6px_#fff] hover:scale-[1.03]"}
+          `}
+        >
+          {loading ? (
+            <div className="flex items-center justify-center gap-3">
+              <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
+              Sending...
+            </div>
+          ) : (
+            "Submit"
+          )}
+        </button>
+      </form>
+    </div>
+
+    {/* EMPTY RIGHT SIDE FOR BALANCED DESIGN */}
+    <div className="hidden lg:block"></div>
+  </div>
+</div>
+
+    </div>
   );
 }

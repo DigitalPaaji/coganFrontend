@@ -17,7 +17,7 @@ export default function About() {
 
 
         {/* Dark overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-white/10 via-white/5 to-white/10" />
+        <div className="absolute inset-0 bg-linear-to-r from-white/10 via-white/5 to-white/10" />
 
         {/* CONTENT */}
         <div className="relative z-10 h-full flex items-center justify-center text-center">
@@ -58,12 +58,12 @@ export default function About() {
             </motion.p>
 
 
- <div className="flex space-x-4  items-center justify-center mt-4">
+ {/* <div className="flex space-x-4  items-center justify-center mt-4">
               <a href="#" className="text-[#f3ecdf] hover:text-[#B67032] "><Facebook width={'30'} height={'30'} /></a>
               <a href="#" className="text-[#f3ecdf] hover:text-[#B67032] "><Instagram width={'30'} height={'30'} /></a>
               <a href="#" className="text-[#f3ecdf] hover:text-[#B67032] "><Twitter width={'30'} height={'30'} /></a>
               <a href="#" className="text-[#f3ecdf] hover:text-[#B67032] "><Youtube width={'30'} height={'30'} /></a>
-            </div>
+            </div> */}
           </div>
 
 
@@ -77,8 +77,8 @@ export default function About() {
             className="py-6 md:text-lg border-t opacity-80  text-gray-300"
             >
         
-           <div className="mb-4 flex items-center flex-wrap justify-center gap-12">  <span> ✉️ support@carboncraft.in </span></div>  
-           Copyright © 2025 Cogon • Designed by <a href="https://digitalpaaji.com/" className="text-lime-100 ">
+           <div className="mb-4 flex items-center flex-wrap justify-center gap-12">  <span> ✉️ support@cogan.life </span></div>  
+           Copyright © 2025 Cogan • Designed by <a href="https://digitalpaaji.com/" className="text-lime-100 ">
             Digital Paaji
             </a> • All Rights Reserved. • Made with ❤️ in India
 

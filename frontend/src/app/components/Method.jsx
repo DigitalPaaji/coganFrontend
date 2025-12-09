@@ -20,7 +20,7 @@ export default function About() {
         </video>
 
         {/* Dark overlay */}
-        <div className="absolute inset-0 bg-linear-to-r from-black/0 via-black/40 to-black/90" />
+        <div className="absolute inset-0  bg-linear-to-b lg:bg-linear-to-r from-black/40 lg:from-black/0 via:black/80 lg:via-black/40 to-black/90" />
 
         {/* CONTENT */}
                <div className="relative z-10 h-full flex items-end pb-32 justify-end text-end">

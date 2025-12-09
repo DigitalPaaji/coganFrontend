@@ -20,7 +20,7 @@ export default function About() {
         </video>
 
         {/* Dark overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-white/20 via-white/10 to-black/60" />
+        <div className="absolute inset-0 lg:bg-gradient-to-r from-white/20 via-white/10 to-black/60" />
 
         {/* CONTENT */}
         <div className="relative z-10 h-full flex items-center">

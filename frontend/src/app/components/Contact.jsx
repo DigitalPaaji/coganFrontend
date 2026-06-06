@@ -1,6 +1,5 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
-import Image from "next/image";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import toast, { Toaster } from "react-hot-toast";
@@ -32,11 +31,11 @@ export default function Contact() {
     try {
       const sendingdata = {
         formdata: formData,
-        sendto: ["pahujakashish18@gmail.com"],
+        sendto: ["support@cogan.life"],
         subject: "Cogan.Life Contact Form",
       };
 
-      const res = await fetch("https://mail.zerobugs.cloud/sendmail", {
+      const res = await fetch("https://sendmail.digitalpaaji.com/sendmail", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
